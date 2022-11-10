@@ -22,8 +22,8 @@ aspect_dict = {
     "Free": None
 }
 
-Bright_value = st.slider("Bright", min_value=0.5, max_value=3.5)
-Blurr_value = st.slider("Blurr", min_value=0.5, max_value=3.5)
+Bright_value = st.sidebar.slider("Bright", min_value=0.5, max_value=3.5)
+Blurr_value = st.sidebar.slider("Blurr", min_value=0.5, max_value=3.5)
 
 aspect_ratio = aspect_dict[aspect_choice]
 
