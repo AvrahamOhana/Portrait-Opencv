@@ -1,5 +1,6 @@
 import streamlit as st
 import cv2
+import numpy as np
 
 st.title('Portrait Mode OpenCV')
 
@@ -30,5 +31,5 @@ if img_file:
     cropped_img = img
     # Manipulate cropped image at will
     st.write("Preview")
-    _ = cropped_img.thumbnail((150,150))
+    _ = cropped_img.thumbnail((300,300))
     st.image(cropped_img)
