@@ -21,6 +21,10 @@ aspect_dict = {
     "2:3": (2, 3),
     "Free": None
 }
+
+Bright_value = st.slider("Bright", min_value=0.5, max_value=3.5)
+Blurr_value = st.slider("Blurr", min_value=0.5, max_value=3.5)
+
 aspect_ratio = aspect_dict[aspect_choice]
 
 if img_file:
